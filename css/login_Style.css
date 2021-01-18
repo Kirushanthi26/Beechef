@@ -1,0 +1,66 @@
+
+.image-container{
+    background: url('food.jpg') center no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    
+}
+.form-container{
+    background-color:#fef1e1;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.form-box h3{
+   font: bold;
+   color: orangered; 
+}
+
+table{
+   
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+tr, td{
+   
+    padding: 5px;
+
+}
+input{
+    background-color: #E2DCDC;
+    color: #343838;
+    width: 250px;
+     border: none;
+     padding: 6px 10px;
+}
+
+input[type=reset]{
+    background-color: #a84949;
+    color: #343838;
+}
+button{
+    margin-left: 35px;
+}
+
+#h1-1{
+    font-style: italic; 
+    text-align: center;
+    color: #fd5f00;
+    font-size: 80px;
+    text-shadow: 0 0 2px #f6f6e9;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:hover {
+    color: #fd5f00;
+  }

@@ -40,16 +40,19 @@ if (isset($_POST["Register"])){
 ?>
 
 <!--create the register form-->
-<div id="wrapper">
-<div id="left-box">
-
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-6 col-md-6 d-none d-md-block image-container">
 </div>
-<div id="right-box">
-<h1 id="right-h1">Registration</h1>
-<p id="right-p">create the account for eat</p>
-<form action="register.php" method="POST" enctype="multipart/form-data">
-<table>
- <tbody>
+
+<div class="col-lg-6 col-md-6 form-container">
+    <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+    <h1 id="h1-1">Beechef</h1>
+        <h3 id="heading mb-4">Registration</h3>
+         <h6 id="right-p">Create Your Account... Enjoy Fastest Food Service..!</h6><br>
+         <form action="register.php" method="POST" enctype="multipart/form-data">
+         <table>
+        <tbody>
         <tr>
         <td><label for="name">Name: </label></td>
         <td><input type="text" name="name" id="name" required></td>
@@ -83,20 +86,24 @@ if (isset($_POST["Register"])){
         // showing the error message
         if(!empty($error_info)){ ?>
             
-            <div><?= $error_info ?></div>
+            <div class="alert alert-danger"><?= $error_info ?></div>
         <?php } ?></td>
         </tr>
-        <tr>
-        <td><button name="Register">Register</button></td>
-        </tr>
+        
         </tbody>
-     </table>
+     </table>    
+     <br>   
+        <button name="Register" class="btn btn-success">Register</button>
+        <button type="reset" class="btn btn-danger">Cancel</button>
+ 
     </form>
     <!-- end of the register form-->
-    
+    <br>
     <!--create the link to login page-->
     <a href="login.php">Already have an account? Login now</a>
-    </div>
+        </div>
+            </div>
+        </div>
     </div>
     <!-- include the footer page-->
     <?php include "footer.php"; ?>

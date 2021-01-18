@@ -33,27 +33,47 @@ if(isset($_POST["username"]) && isset($_POST["password"])){
     }
 }
 ?>
-<h2>Login</h2>
-<form action="login.php" method="POST" enctype="multipart/form-data">
 
-        <label for="username">Username: </label>
-        <input type="text" name="username" id="username" required>
-
-        <label for="password">Password: </label>
-        <input type="password" name="password" id="password" required>
-
-        <?php if(!empty($error_info)){?>
-            <div>
-                <?= $error_info?>
-            </div>
-            <?php } ?>
-
-        <button name="login">Login</button>
-
-    </form>
-    <a href="register.php">Don't have an account? Register now</a>
-
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 d-none d-md-block image-container">
+        </div>
+        <div class="col-lg-6 col-md-6 form-container">
+        <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+        <h1 id="h1-1">Beechef</h1>
+            <h3>Login</h3>
+            <Br>
+            <form action="login.php" method="POST" enctype="multipart/form-data">
+                <table>
+                <tbody>
+                    <tr>
+                        <td><label for="username">Username: </label></td>
+                        <td><input type="text" name="username" id="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password: </label></td>
+                        <td><input type="password" name="password" id="password" required></td>
+                    </tr>
+                    <tr>
+                    <td> <?php if(!empty($error_info)){?>
+                    <div class="alert alert-danger">
+                         <?= $error_info?>
+                    </div>
+                     <?php } ?></td>
+                    </tr>
+                    </tbody>
+                    </table>
+        <Br>
+        <button name="login" class="btn btn-success">Login</button>
+        <button type="reset" class="btn btn-danger">Cancel</button>
+            </form>
+            <br>
+            <a href="register.php">Don't have an account? Register now</a>
+                    </div>
+            
+        </div>
+    </div>
+</div>
 
 
 <?php 
