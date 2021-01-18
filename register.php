@@ -42,11 +42,7 @@ if (isset($_POST["Register"])){
 <!--create the register form-->
 <div id="wrapper">
 <div id="left-box">
-<h5>Photography.</h5>
-<p id="left-p">CLICK FOR YOUR SHOOT.</p>
-<h1 id="left-h1">Photography.</h1>
-<br id="clear">
-<p id="footer-left">JOURNY EVERYWHERE.</p>
+
 </div>
 <div id="right-box">
 <h1 id="right-h1">Registration</h1>
