@@ -40,42 +40,67 @@ if (isset($_POST["Register"])){
 ?>
 
 <!--create the register form-->
-<h2>register</h2>
+<div id="wrapper">
+<div id="left-box">
+<h5>Photography.</h5>
+<p id="left-p">CLICK FOR YOUR SHOOT.</p>
+<h1 id="left-h1">Photography.</h1>
+<br id="clear">
+<p id="footer-left">JOURNY EVERYWHERE.</p>
+</div>
+<div id="right-box">
+<h1 id="right-h1">Registration</h1>
+<p id="right-p">create the account for eat</p>
 <form action="register.php" method="POST" enctype="multipart/form-data">
-        <label for="name">Name: </label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="address">Address: </label>
-        <input type="text" name="address" id="address" required>
-
-        <label for="email">Email: </label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="phoneNo">Tell: </label>
-        <input type="tel" name="phoneNo" id="phoneNo" required>
-
-        <label for="username">Username: </label>
-        <input type="text" name="username" id="username" required>
-
-        <label for="password">Password: </label>
-        <input type="password" name="password" id="password" required>
-
-        <label for="confirm">Confirm Password: </label>
-        <input type="password" name="confirm" id="confirm" required>
-
-        <?php 
+<table>
+ <tbody>
+        <tr>
+        <td><label for="name">Name: </label></td>
+        <td><input type="text" name="name" id="name" required></td>
+        </tr>
+        <tr>
+        <td><label for="address">Address: </label></td>
+        <td><input type="text" name="address" id="address" required></td>
+        </tr>
+        <tr>
+        <td><label for="email">Email: </label></td>
+        <td><input type="email" name="email" id="email" required></td>
+        </tr>
+        <tr>
+        <td><label for="phoneNo">Tell: </label></td>
+        <td><input type="tel" name="phoneNo" id="phoneNo" required></td>
+        </tr>
+        <tr>
+        <td><label for="username">Username: </label></td>
+        <td><input type="text" name="username" id="username" required></td>
+        </tr>
+        <tr>
+        <td><label for="password">Password: </label></td>
+        <td><input type="password" name="password" id="password" required></td>
+        </tr>
+        <tr>
+        <td><label for="confirm">Confirm Password: </label></td>
+        <td><input type="password" name="confirm" id="confirm" required></td>
+        </tr>      
+        <tr>
+        <td><?php 
         // showing the error message
         if(!empty($error_info)){ ?>
             
             <div><?= $error_info ?></div>
-        <?php } ?>
-        <button name="Register">Register</button>
-
+        <?php } ?></td>
+        </tr>
+        <tr>
+        <td><button name="Register">Register</button></td>
+        </tr>
+        </tbody>
+     </table>
     </form>
     <!-- end of the register form-->
-
+    
     <!--create the link to login page-->
     <a href="login.php">Already have an account? Login now</a>
-
+    </div>
+    </div>
     <!-- include the footer page-->
     <?php include "footer.php"; ?>
