@@ -1,0 +1,110 @@
+#h1-1{
+    font-style: italic; 
+    text-align: left;
+    color: #fd5f00;
+    font-size: 80px;
+    text-shadow: 0 0 2px #f6f6e9;
+}
+* {box-sizing: border-box}
+.mySlides1{display: none}
+img {vertical-align:middle;}
+
+/* Slideshow container */
+.slideshow-container {
+background-color: #fae3d9;
+ width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+.text {
+    color: #F75940;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+ul li{
+ list-style-type:none;
+}
+
+.box-b1{
+    border: 2px solid #F21D44;
+    width: 30%;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color:white;
+}
+.box-b2{
+    border: 2px solid #F21D44;
+    width: 20%;
+    float: left;
+    margin-left: 4%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color:white;
+}
+.home-t1{
+    text-align: center;
+}
+#h1-2{
+    font-style: italic; 
+    text-align: left;
+    color: #fd5f00;
+    font-size: 60px;
+    text-align: center;
+    
+}
+.footer-box{
+    border: 2px;
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.sm{
+    margin-left: 20px;
+
+    
+}
