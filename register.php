@@ -105,5 +105,5 @@ if (isset($_POST["Register"])){
             </div>
         </div>
     </div>
-    <!-- include the footer page-->
-    <?php include "footer.php"; ?>
+
+    
