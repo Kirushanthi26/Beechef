@@ -50,8 +50,15 @@ if(isset($_POST['update'])){
   }
 
 ?>
-
-
+<?php
+if(isset($_POST['delete'])){
+    $unn = $_POST["Username"];
+$sql1 = "DELETE * FROM user WHERE username= '$unn' ";
+if ($conn->query($sql1) === TRUE) {
+    echo "Record deleted successfully";
+}
+}
+?>
 
 <div class="container-fluid" id="wrapper">
 <div class="row">
@@ -91,6 +98,7 @@ if(isset($_POST['update'])){
         <td></table>    
      <br>   
         <button name="update" class="btn btn-success" id="b1">Update</button>
+        <button name="delete" class="btn btn-warning" id="b3">Delete</button>
         <button type="reset" class="btn btn-danger" id="b2">Cancel</button>
  
     </form>
