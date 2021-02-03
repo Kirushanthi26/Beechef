@@ -38,7 +38,7 @@ include "headerdesign.php";?>
 			$fquery=$conn->query($sql);
 			$ftrow=$fquery->fetch_array();
 			?>
-				<div id="<?php echo $ftrow['c_name']; ?>" class="tab-pane fade in active" style="margin-top:20px;">
+				<div id="<?php echo $ftrow['c_name']; ?>" class="container tab-pane active" style="margin-top:20px;">
 					<?php
 
 						$sql="select * from product where cid='".$ftrow['cid']."'";
@@ -48,21 +48,23 @@ include "headerdesign.php";?>
 							$inc = ($inc == 4) ? 1 : $inc+1; 
 							if($inc == 1) echo "<div class='row'>"; 
 							?>
+							<div class="container">
 								<div class="col-md-3">
-                                <div class="panel-group">
-									<div class="panel panel-default">
-										<div class="panel-heading text-center">
+                                <div class="card">
+									
+										<div class="card-header text-center">
 											<b><?php echo $pfrow['p_name']; ?></b>
 										</div>
-										<div class="panel-body">
+										<div class="card-body">
 											<img src="<?php if(empty($pfrow['photo'])){echo "foodPic/noimage.jpg";} else{echo $pfrow['photo'];} ?>" height="225px;" width="100%">
 										</div>
-										<div class="panel-footer text-center">
+										<div class="card-footer text-center">
+										<?php echo $pfrow['description']; ?><br>
 											&#x20A8; <?php echo number_format($pfrow['price'], 2); ?>
 										</div>
-                                    </div>
+                                   
                         </div>
-								</div>
+								</div></div>
 							<?php
 							if($inc == 4) echo "</div>";
 						}
@@ -81,7 +83,7 @@ include "headerdesign.php";?>
 			$cquery=$conn->query($sql);
 			while($trow=$cquery->fetch_array()){
 				?>
-				<div id="<?php echo $trow['c_name']; ?>" class="tab-pane fade" style="margin-top:20px;">
+				<div id="<?php echo $trow['c_name']; ?>" class="container tab-pane fade" style="margin-top:20px;">
 					<?php
 
 						$sql="select * from product where cid='".$trow['cid']."'";
@@ -91,6 +93,7 @@ include "headerdesign.php";?>
 							$inc = ($inc == 4) ? 1 : $inc+1; 
 							if($inc == 1) echo "<div class='row'>"; 
 							?>
+							<div class="container">
 								<div class="col-md-3">
 									<div class="panel panel-default">
 										<div class="panel-heading text-center">
@@ -103,6 +106,7 @@ include "headerdesign.php";?>
 											&#x20A8; <?php echo number_format($prow['price'], 2); ?>
 										</div>
 									</div>
+								</div>
 								</div>
 							<?php
 							if($inc == 4) echo "</div>";
