@@ -4,6 +4,21 @@ include "database.php";
 include "header_home.php";
 include "headerdesign.php";?>
 
+<?php
+if(isset($_POST['submit'])){
+  $com = $_POST["com"];
+  $name = $_POST["uname"];
+ 
+
+  $sql = "INSERT INTO feedback (f_description, uname) VALUES ( '$com', '$name')";
+
+  if (mysqli_query($conn, $sql)) {
+		echo "Your Feedback Added successfully !";
+	 } 
+
+}
+?>
+
 <div class="container-fluid" id="wrapper">
 <div class="row">
 <div class="col-md-12" style="background-color:#fef1e1;">
@@ -12,7 +27,7 @@ include "headerdesign.php";?>
 <div class="container">
 
   <h1>Feedback Form</h1>
-  <form action="/action_page.php" class="was-validated">
+  <form action="about.php" class="was-validated" method="post">
     <div class="form-group">
       <label for="uname">Username:</label>
       <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
@@ -25,7 +40,7 @@ include "headerdesign.php";?>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 <br>

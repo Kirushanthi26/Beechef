@@ -130,7 +130,7 @@ function showSlides(n, no) {
     <h6>Fast Delivery</h6>
     <p>After confirm, if we accept the order, we will send confime mail.</p>
     </div>
-   
+ 
     <h2 class="home-t1" style="color:#F25D27;">New Items</h2>
     <br>
       <div class="container">
