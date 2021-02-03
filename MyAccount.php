@@ -30,7 +30,26 @@ $output=NULL;
 		
 	}
 ?>	
+<?php
+if(isset($_POST['update'])){
+    $name = $_POST["name"];
+    $add = $_POST["address"];
+    $em = $_POST["email"];
+    $pn = $_POST["phoneNo"];
+    $un = $_POST["username"];
+    $pw = $_POST["password"];
 
+   
+  
+    $sql = "INSERT INTO user (name, address, email, tel, username, password) VALUES ( '$name', '$add','$em','$pn','$un','$pw')";
+  
+    if (mysqli_query($conn, $sql)) {
+          echo "Your details updated successfully !";
+       } 
+  
+  }
+
+?>
 
 
 
@@ -39,7 +58,7 @@ $output=NULL;
 <div class="col-md-12" style="background-color:#fef1e1;">
 
 <h1 id="h1-22">My Account Details Update</h1>
-<form action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> method="post">
+<form action="MyAccount.php" method="post">
 <td><label for="Username">Enter Username for searching purpose: </label></td>
 <input type="text" name="Username" id="Username" >
 <input type="submit" name="submit1" value="Find">	
