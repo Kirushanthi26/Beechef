@@ -31,7 +31,7 @@
       <a class="nav-link" href="#">History</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">About As</a>
+      <a class="nav-link" href="about.php">About As</a>
     </li>
   </ul>
 </nav>
