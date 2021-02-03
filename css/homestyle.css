@@ -108,3 +108,20 @@ ul li{
 
     
 }
+#h1-22{
+  color: #F75940;
+  margin-top: 25px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+#b1, #b2 {
+margin-bottom: 20px;
+margin-left: 25px;
+}
+.card{
+  float: left;
+}

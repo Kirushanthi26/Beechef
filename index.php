@@ -12,7 +12,7 @@ include "header_home.php";?>
     </div>
     <div class="col-md-4" style="background-color:#fef1e1;">
     <ul id="icon-set">
-    <li class="fas fa-user-circle"><b><a href="loginout.php">My Account</a></b></li><br>
+    <li class="fas fa-user-circle"><b><a href="MyAccount.php">My Account</a></b></li><br>
     <li class="fas fa-cart-plus"><b><a href="loginout.php">Add Cart</a></b></li><Br>
     <li class="fas fa-sign-out-alt"><b><a href="loginout.php">Login Out</a></b></li>
     
