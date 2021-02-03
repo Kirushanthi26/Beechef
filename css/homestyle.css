@@ -108,20 +108,24 @@ ul li{
 
     
 }
-#h1-22{
+#h1-11{
   color: #F75940;
   margin-top: 25px;
 }
-
-th, td {
-  padding: 15px;
-  text-align: left;
+.fixed_header tbody{
+  display:block;
+  overflow:auto;
+  height:10px;
+  width:100%;
 }
-
-#b1, #b2 {
-margin-bottom: 20px;
-margin-left: 25px;
+.fixed_header thead tr{
+  display:block;
 }
-.card{
-  float: left;
+#btn11{
+  margin-left: 700px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+a{
+  text-decoration: none;
 }

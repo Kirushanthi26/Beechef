@@ -132,7 +132,25 @@ function showSlides(n, no) {
     </div>
    
     <h2 class="home-t1" style="color:#F25D27;">New Items</h2>
-
+    <br>
+      <div class="container">
+      <div class="row">
+          <?php
+          $sql = "select * from product";
+          $res = $conn->query($sql);
+          if($res->num_rows>0){
+            while($row=$res->fetch_assoc()){
+              echo '<div class="col-md-3 text-center">
+              <img src="'.$row['photo'].'" alt=""  width="100" height="100">
+              <p><strong>'. $row['p_name'] .'</strong></p>
+              <h4 class="text-danger"> Rs.'. $row['price'] .'</h4>
+              </div>
+              ';
+            }
+          }
+          ?>
+      </div>
+      </div>
 
     </div>
 </div>
