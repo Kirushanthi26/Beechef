@@ -7,11 +7,11 @@
     <h1 id="h1-2">Beechef</h1>
     </div>
     <div class="footer-box">
-    <h1 id="h1-2">About As</h1>
+    <h1 id="h1-2">About us</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit architecto adipisci similique, repellendus modi quas nobis ipsa veniam velit?</p>
     </div>
     <div class="footer-box">
-    <h1 id="h1-2">Contect Us</h1>
+    <h1 id="h1-2">Contact Us</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste deleniti recusandae blanditiis sed enim excepturi error porro magni dolorem qui?</p>
     </div>
   <br>
