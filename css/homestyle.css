@@ -76,6 +76,7 @@ ul li{
     text-align: center;
     padding: 15px;
     background-color:white;
+    border-radius: 5px;
 }
 .box-b2{
     border: 2px solid #F21D44;
@@ -87,6 +88,7 @@ ul li{
     text-align: center;
     padding: 15px;
     background-color:white;
+    border-radius: 5px;
 }
 .home-t1{
     text-align: center;

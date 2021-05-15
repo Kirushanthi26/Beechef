@@ -62,37 +62,37 @@ if ($conn->query($sql1) === TRUE) {
 
 <div class="container-fluid" id="wrapper">
 <div class="row">
-<div class="col-md-12" style="background-color:#fef1e1;">
-
-<h1 id="h1-22">My Account Details Update</h1>
+<div class="col-md-12" style="background-color:#fef1e1;  padding:50px;">
+<center>
+<h1 id="h1-22" style="color:#F75940; padding:20px;">My Account Details Update</h1>
 <form action="MyAccount.php" method="post">
 <td><label for="Username">Enter Username for searching purpose: </label></td>
-<input type="text" name="Username" id="Username" >
+<input type="text" name="Username" id="Username" style="width: 300px" >
 <input type="submit" name="submit1" value="Find">	
 <table>
         <tr>
         <td><label for="name">Name: </label></td>
-        <td><input type="text" name="name" id="name" value="<?php echo $name; ?>" ></td>
+        <td><input type="text" name="name" id="name" style="width:250px" value="<?php echo $name; ?>" ></td>
         </tr>
         <tr>
         <td><label for="address">Address: </label></td>
-        <td><input type="text" name="address" id="address" value="<?php echo $add; ?>" ></td>
+        <td><input type="text" name="address" id="address" style="width:250px"value="<?php echo $add; ?>" ></td>
         </tr>
         <tr>
         <td><label for="email">Email: </label></td>
-        <td><input type="email" name="email" id="email" value="<?php echo $email; ?>" ></td>
+        <td><input type="email" name="email" id="email" style="width:250px" value="<?php echo $email; ?>" ></td>
         </tr>
         <tr>
         <td><label for="phoneNo">Tell: </label></td>
-        <td><input type="tel" name="phoneNo" id="phoneNo" value="<?php echo $tel; ?>" ></td>
+        <td><input type="tel" name="phoneNo" id="phoneNo" style="width:250px" value="<?php echo $tel; ?>" ></td>
         </tr>
         <tr>
         <td><label for="username">Username: </label></td>
-        <td><input type="text" name="username" id="username" value="<?php echo $user; ?>" ></td>
+        <td><input type="text" name="username" id="username" style="width:250px"value="<?php echo $user; ?>" ></td>
         </tr>
         <tr>
         <td><label for="password">Password: </label></td>
-        <td><input type="password" name="password" id="password" value="<?php echo $pas; ?>" ></td>
+        <td><input type="password" name="password" id="password"style="width:250px" value="<?php echo $pas; ?>" ></td>
         </tr>     
         <tr>
         <td></table>    
@@ -105,7 +105,7 @@ if ($conn->query($sql1) === TRUE) {
 
     
 
-
+    <center>
 </div>
 </div>
 </div>

@@ -31,7 +31,7 @@ include "header_home.php";?>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">History</a>
+      <a class="nav-link" href="history.php">History</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="about.php">About As</a>
