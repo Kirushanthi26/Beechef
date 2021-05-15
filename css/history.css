@@ -1,0 +1,12 @@
+
+.history__container{
+    background-color:#fef1e1;
+    height:100vh;
+    width: 100%;
+}
+
+.history__content_box h1{
+    text-align: center;
+    color: #fd5f00;
+    padding: 30px;
+}
