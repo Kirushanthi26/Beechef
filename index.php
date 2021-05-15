@@ -10,13 +10,11 @@ include "header_home.php";?>
     <h1 id="h1-1"><img src="css/logo.png" alt="logo" title="beechef logo" width="200px" id="">
     Beechef</h1>
     </div>
-    <div class="col-md-4" style="background-color:#fef1e1;">
-    <ul id="icon-set">
-    <li class="fas fa-user-circle"><b><a href="MyAccount.php">My Account</a></b></li><br>
-    <li class="fas fa-cart-plus"><b><a href="viewCart.php">Add Cart</a></b></li><Br>
-    <li class="fas fa-sign-out-alt"><b><a href="loginout.php">Login Out</a></b></li>
-    
-    <ul>
+
+    <div class="col-md-4" style="background-color:#fef1e1;" class="nav_style">
+    <a href="MyAccount.php" style="padding: 80px 20px; display: inline-block;justify-content: center; align-items: center; color:#F75940; "><li class="fas fa-user-circle">My Account</li></a>
+    <a href="viewCart.php"style="padding:80px 20px; display: inline-block;justify-content: center; align-items: center;  color:#F75940; "><li class="fas fa-cart-plus">Add Cart</li></a>
+    <a href="loginout.php"style="padding: 80px 20px; display: inline-block;justify-content: center; align-items: center; color:#F75940; "><li class="fas fa-sign-out-alt">Login Out</li></a>
     </div>
 </div>
 </div>
@@ -41,21 +39,22 @@ include "header_home.php";?>
   </ul>
 </nav>
 <!-- Slideshow container -->
+<!-- style="width:1000px" height="500px" -->
 <div class="slideshow-container">
     <center>
   <div class="mySlides1">
-    <img src="css/img1.jpg" style="width:1000px" height="500px">
-    <div class="text">Caption Three</div>
+    <img src="css/img1.jpg" style="width:1000px; height:500px; object-fit:cover;">
+    <div class="text" style="font-weight: bolder;">Sugar, spice, and everything nice.</div>
   </div>
 
   <div class="mySlides1">
-    <img src="css/img2.jpg" style="width:1000px" height="500px">
-    <div class="text">Caption Three</div>
+    <img src="css/img2.jpg" style="width:1000px; height:500px; object-fit:cover;">
+    <div class="text" style="font-weight: bolder;">Good food, good life.</div>
   </div>
 
   <div class="mySlides1">
-    <img src="css/img3.jpg" style="width:1000px" height="500px">
-    <div class="text">Caption Three</div>
+    <img src="css/img3.jpg" style="width:1000px; height:500px; object-fit:cover;">
+    <div class="text" style="font-weight: bolder;">Food is an important part of a balanced diet.</div>
   </div>
 </center>
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>

@@ -6,6 +6,13 @@
     text-shadow: 0 0 2px #f6f6e9;
 }
 * {box-sizing: border-box}
+
+a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .mySlides1{display: none}
 img {vertical-align:middle;}
 
@@ -13,13 +20,14 @@ img {vertical-align:middle;}
 .slideshow-container {
 background-color: #fae3d9;
  width: 100%;
-  position: relative;
+ position: relative; 
   margin: auto;
-
 }
+
 .text {
     color: #F75940;
     font-size: 30px;
+    font-weight: bolder;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;

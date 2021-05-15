@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2021 at 10:33 AM
+-- Generation Time: Feb 08, 2021 at 02:49 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -33,6 +33,15 @@ CREATE TABLE `category` (
   `c_name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`cid`, `c_name`) VALUES
+(1, 'Rice'),
+(2, 'Burgers'),
+(3, 'Pizza');
+
 -- --------------------------------------------------------
 
 --
@@ -41,9 +50,17 @@ CREATE TABLE `category` (
 
 CREATE TABLE `feedback` (
   `fid` int(11) NOT NULL,
-  `uid` int(11) NOT NULL,
-  `f_description` varchar(500) NOT NULL
+  `f_description` varchar(500) NOT NULL,
+  `uname` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`fid`, `f_description`, `uname`) VALUES
+(1, 'testing the feedback', 'testing'),
+(2, 'testing the feedback form', 'kiru');
 
 -- --------------------------------------------------------
 
@@ -71,6 +88,15 @@ CREATE TABLE `product` (
   `photo` varchar(150) CHARACTER SET latin1 NOT NULL,
   `description` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`pid`, `cid`, `p_name`, `price`, `photo`, `description`) VALUES
+(1, 1, 'Tandoori Chicken Biriyani\r\n', 600, 'foodPic/rice1.jpg', 'Tandoori oven baked shredded chicken breasts, onions, and capsicum'),
+(2, 3, 'Cheese Pizza', 800, 'foodPic/pizza2 (1).jpg', 'Mozzarella cheese, Sauce: Combine pureed tomatoes'),
+(3, 3, 'Hot Chili Chicken', 989, 'foodPic/pizza2 (3).jpg', 'Quick fried hot chili chicken, capsicum, onion, red paprika slices, and devil sauce');
 
 -- --------------------------------------------------------
 
@@ -124,7 +150,9 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`uid`, `name`, `address`, `email`, `tel`, `username`, `password`, `admin`) VALUES
 (1, 'Kirushanthi ', '14, Armour street, Colombo - 12.', 'kiru.it@gmail.com', 771594562, 'Kiru', 'f7db9c0eff8d1a73ba92d7daad8870ea', 0),
-(2, 'Admin', '15, 2nd cross street, Colombo - 13', 'admin12@gmail.com', 771874562, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1);
+(2, 'Admin', '15, 2nd cross street, Colombo - 13', 'admin12@gmail.com', 771874562, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1),
+(4, 'Kirushanthi L', '14, Armour street, Colombo - 12.', 'kiru.it@gmail.com', 771594562, 'Kiru1', 'f7db9c0eff8d1a73ba92d7daad8870ea', 0),
+(5, 'lashanthi', '06, Armour street, Colombo - 12.', 'lasha.it@gmail.com', 771594556, 'kd2', '987', 0);
 
 -- --------------------------------------------------------
 
@@ -153,8 +181,7 @@ ALTER TABLE `category`
 -- Indexes for table `feedback`
 --
 ALTER TABLE `feedback`
-  ADD PRIMARY KEY (`fid`),
-  ADD KEY `uid` (`uid`);
+  ADD PRIMARY KEY (`fid`);
 
 --
 -- Indexes for table `order_acc`
@@ -206,13 +233,13 @@ ALTER TABLE `vehicle_details`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `fid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `fid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `order_acc`
@@ -224,7 +251,7 @@ ALTER TABLE `order_acc`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `purchase`
@@ -242,7 +269,7 @@ ALTER TABLE `purchase_details`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `vehicle_details`
